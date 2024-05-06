@@ -1,0 +1,100 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.bg1, .bg2, .bg3, .bg4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+
+}
+
+.bg1{
+    background-image: url('/bg1.jpg');
+    min-height: 100%;
+   
+}
+
+.bg2{
+    background-image: url('/bg2.jpg');
+    min-height: 100%;
+
+}
+
+.bg3{
+    background-image: url('/bg3.jpg');
+    min-height: 100%;
+}
+.bg4{
+    background-image: url('/bg4.jpg');
+    min-height: 400px;
+}
+
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.dark{
+background-color: #282e34;
+color: #ddd;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase; 
+}
+
+.text .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.text .border.trans{
+    background-color: transparent;
+}
+
+@media(max-width:568px){
+    .bg1, .bg2, .bg3, .bg4{
+        background-attachment: scroll;
+    }
+    .bg2{
+        background-image: url('/bg1.jpg');
+    min-height: 100%;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 22px;
+        letter-spacing: 8px;
+        text-transform: uppercase; 
+    }
+    .text .border{
+        background-color: #111;
+        color: #fff;
+        padding: 0px;
+    }
+    
+    .text .border.trans{
+        background-color: transparent;
+    }
+}
