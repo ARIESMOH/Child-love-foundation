@@ -1,54 +1,22 @@
-body, html{
+body{
+    background-image: url(bg5.jpg);
     height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-}
-
-.bg1, .bg2, .bg3, .bg4{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    opacity: 0.7;
     background-attachment: fixed;
-
 }
-
-.bg1{
-    background-image: url('/bg1.jpg');
-    min-height: 100%;
-   
-}
-
-.bg2{
-    background-image: url('/bg2.jpg');
-    min-height: 100%;
-
-}
-
-.bg3{
-    background-image: url('/bg3.jpg');
-    min-height: 100%;
-}
-.bg4{
-    background-image: url('/bg4.jpg');
-    min-height: 400px;
-}
-
-
 .section{
+    margin-top: 300px;
     text-align: center;
-    padding: 30px 60px;
+    padding: 50px 80px;
 }
 
 .dark{
 background-color: #282e34;
 color: #ddd;
 }
-
 .text{
     position: absolute;
     top: 50%;
@@ -74,30 +42,30 @@ button{
     height: 40px;
     width: 120px;
     border-radius: 40px;
-    border: white;
     border-color: white;
-    border-style: solid;
+    border: white;
     cursor: pointer;
-    transition: all ease 0.3s;
+    transition: all ease 0.2s;
 }
 button:hover{
     background-color: green;
     color: white;
     border-color: green; 
+    border-style: solid; 
     border: green;
-    border-style: solid;  
 }
 button::after{
-    opacity: 0.7;
+    opacity: 0.2;
 }
-
 @media(max-width:568px){
-    .bg1, .bg2, .bg3, .bg4{
-        background-attachment: scroll;
-    }
-    .bg2{
-        background-image: url('/bg1.jpg');
-        min-height: 100%;
+    body{
+        background-image: url(bg5.jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
     }
     .text{
         position: absolute;
@@ -105,14 +73,15 @@ button::after{
         width: 100%;
         text-align: center;
         color: #000;
-        font-size: 24px;
+        font-size: 27px;
         letter-spacing: 8px;
         text-transform: uppercase; 
     }
+    
     .text .border{
         background-color: #111;
         color: #fff;
-        padding: 0px;
+        padding: 20px;
     }
     
     .text .border.trans{
@@ -123,9 +92,9 @@ button::after{
         height: 40px;
         width: 120px;
         border-radius: 40px;
+        border-color: white; 
         border: white;
-        border-color: white;
-        border-style: solid;
+        border: solid; 
         cursor: pointer;
         transition: all ease 0.2s;
     }
@@ -134,10 +103,10 @@ button::after{
         color: white;
         border-color: green; 
         border: green;
-        border-color: green;
-        border-style: solid;  
+        border: solid;  
     }
     button::after{
         opacity: 0.5;
     }
+
 }
